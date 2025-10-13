@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../PLUGINS/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+  <!-- Google Fonts / Necessitam de internet no entanto, não afeta a experiência do usuário -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Montserrat:wght@600;700&display=swap"
+    rel="stylesheet" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/ToDoList.css" />
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <a class="navbar-brand text-light">SEMANA DA ETEC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="conteudo.html">Conteudo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="minecon.html">Jogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">ToDoList</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Minha Lista de Tarefas</h1>
+  <!-- conteudo -->
+  <div id="container">
+    <form id="form-add-todo">
+      <h2>Insira a missão:</h2>
+      <input style="padding: 5px; margin-left: 10px" id="textinput" type="text" name="task" placeholder="Digite..." />
+      <button id="confirm" style="padding: 5px; color: white; background-color: #28a745">
+        +
+      </button>
+      <button id="cancel" onclick="clearTasks()" style="
+            margin-top: 10px;
+            background: #dc3545;
+            color: white;
+            padding: 5px;
+          " type="button">
+        Limpar
+      </button>
+    </form>
+    <ul class="todo-list"></ul>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="../JS/ToDoList.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Jquery inicializa antes do bootstrap -->
+    <script src="../PLUGINS/jquery-3.7.1.js"></script>
+    <script src="../PLUGINS/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="../PLUGINS/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+:root {
+
+  --color-secondary: #6c757d;
+  --color-dark-blue: #03045e;
+  --color-primary: #0d6efd;
+  --color-light-blue: #1c1b49;
+  --color-blue: #023e8a;
+  --secondary: #caf0f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Removido linha solta de variável */
+body {
+  background: linear-gradient(315deg,
+      var(--secondary) 0%,
+      var(--color-primary) 90%,
+      var(--color-dark-blue) 150%);
+
+  overflow-y: hidden;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 4%;
+  margin-bottom: 0;
+  padding: 0;
+
+  font-family: "Lora", Georgia, serif;
+
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--color-dark-blue);
+}
+
+#navbarNav {
+  justify-content: end;
+  font: bold;
+}
+
+#navbarNav ul li a {
+  margin-right: 1rem;
+  color: white;
+}
+
+#navbarNav ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  transition: 0.7s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  color: #eee;
+  justify-content: center;
+  display: flex;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+#text-option {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: #eee;
+  display: none;
+}
+
+#hands-container {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+#mao-container,
+#maoMonstro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2%;
+  padding: 2%;
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: var(--color-blue);
+  border: 3px solid black;
+  border-radius: 2rem;
+}
+
+#mao,
+#maoMonstro {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+}
+
+#mao img,
+#maoMonstro img {
+  width: 6rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#mao img:hover {
+  transform: scale(1.1);
+}
+
+#center-area {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #eee;
+}
+
+#player,
+#monster {
+  width: 8rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.fly-center {
+  display: block !important;
+  z-index: 10;
+}
+
+footer {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#reset {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--secondary);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Montserrat", Arial, sans-serif;
+  transition:
+    background-color 0.2s,
+    transform 0.12s;
+}
+
+#reset:hover,
+#reset:focus {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+#reset:active {
+  transform: translateY(0);
+}
+
+#pontos {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Media queries */
+@media (max-width: 1200px) and (min-width: 769px) {
+  body {
+    margin-top: 8%;
+  }
+
+  #mao img,
+  #maoMonstro img {
+    width: 5rem;
+  }
+
+  #player,
+  #monster {
+    width: 7rem;
+  }
+
+  #center-area {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 11%;
+  }
+
+  #hands-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  #mao,
+  #maoMonstro {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #mao img,
+  #maoMonstro img {
+    width: 4rem;
+  }
+
+  #player,
+  #monster {
+    width: 6rem;
+  }
+
+  #center-area {
+    height: 170px;
+  }
+}

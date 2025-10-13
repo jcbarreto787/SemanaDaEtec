@@ -1,0 +1,163 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-secondary: #6c757d;
+  --color-dark-blue: #03045e;
+  --color-blue: #023e8a;
+  --secondary: #caf0f8;
+}
+
+body {
+  margin-top: 3rem;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: "Lora", Georgia, serif;
+  background: linear-gradient(315deg,
+      var(--secondary) 0%,
+      var(--color-primary) 90%,
+      var(--color-dark-blue) 150%);
+  overflow-y: hidden;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--color-dark-blue);
+}
+
+#navbarNav {
+  justify-content: end;
+  font: bold;
+}
+
+#navbarNav ul li a {
+  margin-right: 1rem;
+  color: white;
+}
+
+#navbarNav ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  transition: 0.7s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  background-color: #ffffff;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  border-radius: 32px;
+  border: 2px black solid;
+  font-size: 4rem;
+}
+
+#form-add-todo {
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  gap: 0;
+}
+
+#form-add-todo h2 {
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 6%;
+  text-shadow: 1px 1px 3px rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: white;
+}
+
+#textinput {
+  width: 60%;
+  height: 2.6rem;
+  font-size: 1rem;
+  border: solid black 2px;
+  border-radius: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+#confirm {
+  width: auto;
+  height: 2.6rem;
+  font-size: 1rem;
+}
+
+#cancel {
+  width: auto;
+  height: 2.6rem;
+  font-size: 1rem;
+}
+
+.todo-list {
+  margin-top: 1rem;
+  width: 90%;
+  height: 20rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.checkbox {
+  overflow-y: auto;
+  background-color: var(--color-blue);
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  border: solid black 2px;
+  color: #eee;
+  border-radius: 1px;
+  margin-top: 15px;
+  border-radius: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+
+@media screen and (max-width: 1328px) {
+  #container {
+    width: 60%;
+    max-height: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 9%;
+  }
+
+  #contato {
+    margin-top: 15rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    width: 70%;
+    max-height: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 13%;
+  }
+
+}

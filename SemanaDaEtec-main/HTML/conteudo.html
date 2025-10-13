@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Web: JS, HTML e CSS</title>
+    <!-- Google Fonts / Necessitam de internet no entanto, não afeta a experiência do usuário -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../PLUGINS/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="../CSS/conteudo.css" />
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+      <a class="navbar-brand text-light">SEMANA DA ETEC</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Conteudo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="minecon.html">Jogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ToDoList.html">ToDoList</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="title">
+      <h1>Aprenda sobre HTML, CSS e JavaScript</h1>
+      <p>Os pilares do desenvolvimento web moderno.</p>
+    </header>
+
+    <!-- Cards -->
+    <main>
+      <section id="html" class="card">
+        <h2>HTML</h2>
+        <p>
+          HTML (HyperText Markup Language) é a base de toda página da web. Ele
+          não é uma linguagem de programação, mas sim uma linguagem de marcação
+          usada para estruturar o conteúdo que o navegador vai exibir. Por meio
+          de tags como 'h1', 'p', 'img' e 'a', o HTML define títulos,
+          parágrafos, imagens e links, entre muitos outros elementos. É ele que
+          organiza o texto e os dados que aparecem visualmente na tela,
+          permitindo que outras linguagens, como CSS e JavaScript, entrem em
+          ação. A versão atual, o HTML5, trouxe novos recursos para vídeos,
+          áudio, formulários e semântica, tornando possível criar sites mais
+          acessíveis e interativos sem depender de plugins externos. Em resumo,
+          o HTML é o esqueleto de qualquer site.
+        </p>
+      </section>
+      <section id="css" class="card">
+        <h2>CSS</h2>
+        <p>
+          O CSS é a linguagem responsável por controlar o visual e o layout das
+          páginas da web. Seu nome, “Folhas de Estilo em Cascata”, reflete a
+          forma como as regras são aplicadas: elas “cascateiam” do geral para o
+          específico, permitindo grande controle sobre o design. Com CSS, é
+          possível definir cores, tamanhos, fontes, espaçamentos, bordas e
+          animações. Ele separa a forma (design) do conteúdo (HTML), o que torna
+          o código mais limpo e organizado. Hoje, o CSS moderno inclui recursos
+          avançados como Flexbox e Grid, que facilitam a criação de layouts
+          responsivos, adaptáveis a telas de celulares, tablets e computadores.
+          Além disso, ferramentas como Sass e Tailwind CSS ajudam a acelerar o
+          trabalho de estilização com sintaxes mais práticas e componentes
+          reutilizáveis.
+        </p>
+      </section>
+      <section id="js" class="card">
+        <h2>JavaScript</h2>
+        <p>
+          O JavaScript é uma linguagem de script essencial para o
+          desenvolvimento web moderno. Ela é responsável por adicionar
+          interatividade e dinamismo às páginas da internet. Enquanto o HTML
+          estrutura o conteúdo e o CSS define o estilo visual, o JavaScript é
+          quem faz as coisas “acontecerem” — animações, validação de
+          formulários, botões que respondem a cliques e atualizações de conteúdo
+          sem precisar recarregar a página. Ele é executado diretamente no
+          navegador do usuário, mas também pode rodar no servidor, por meio do
+          Node.js. Atualmente, o JavaScript é usado em praticamente todos os
+          tipos de aplicações: sites, aplicativos móveis e sistemas web. Além
+          disso, frameworks como React, Angular e Vue.js facilitaram o
+          desenvolvimento de interfaces modernas e responsivas.
+        </p>
+      </section>
+    </main>
+
+    <!-- Jumbotron -->
+    <!-- Python vs C# comparativo -->
+    <div
+      class="jumbotron jumbotron-fluid"
+      style="background-color: #03045e; margin-bottom: 0; margin-top: 2rem"
+    >
+      <div class="python-csharp-comparativo">
+        <div class="python-box">
+          <h2>Python</h2>
+          <p>
+            O Python é uma das linguagens mais versáteis e populares atualmente.
+            É conhecida por sua simplicidade, clareza e facilidade de
+            aprendizado, com uma sintaxe próxima da linguagem humana. Isso a
+            torna ideal tanto para iniciantes quanto para profissionais
+            experientes. Python é usada em diversas áreas: desenvolvimento web
+            (com Django e Flask), ciência de dados, inteligência artificial,
+            automação de tarefas, análise de dados e cálculos científicos. Sua
+            grande comunidade e a vasta biblioteca de pacotes disponíveis tornam
+            possível realizar praticamente qualquer tarefa.
+          </p>
+        </div>
+        <div class="comparativo-texto">
+          <p>
+            Ambas são poderosas
+            <br />
+            mas possuem diferentes focos e sintaxes.
+          </p>
+        </div>
+        <div class="csharp-box">
+          <h2>C#</h2>
+          <p>
+            O C# é uma linguagem de programação criada pela Microsoft e
+            amplamente usada no desenvolvimento de aplicações Windows, jogos e
+            sistemas corporativos. Ela é moderna, fortemente tipada e baseada em
+            orientação a objetos, o que facilita a organização do código e a
+            reutilização de componentes. O C# é a principal linguagem da
+            plataforma .NET, o que permite criar desde softwares desktop até
+            aplicativos web e APIs usando o ASP.NET. É também muito popular no
+            desenvolvimento de jogos com o Unity, um dos motores mais utilizados
+            do mundo..
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sql">
+      <img
+        src="../Imagens/f888f5d0-28e0-45b1-acc9-548e87428246.png"
+        alt="Banco de dados"
+      />
+      <div class="sql-content">
+        <h1>SQL</h1>
+        <p>
+          SQL (Structured Query Language) é uma linguagem usada para gerenciar e manipular bancos de dados relacionais. Ela permite armazenar, consultar, atualizar e excluir informações de forma organizada. Bancos de dados como MySQL, PostgreSQL, SQL Server e Oracle usam SQL como base para o gerenciamento das informações. Por exemplo, é possível usar comandos como <b class="cor-texto">SELECT</b> para buscar dados, <b class="cor-texto">INSERT</b> para adicionar novos registros, <b class="cor-texto">UPDATE</b> para alterar informações e <b class="cor-texto">DELETE</b> para remover dados. O SQL é fundamental para aplicações que precisam lidar com grandes volumes de informação — desde sistemas financeiros e redes sociais até lojas virtuais. Ele garante que os dados sejam acessados com eficiência, consistência e segurança.
+        </p>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Jquery inicializa antes do bootstrap -->
+    <script src="../PLUGINS/jquery-3.7.1.js"></script>
+    <script src="../PLUGINS/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="../PLUGINS/sweetalert2.all.min.js"></script>
+  </body>
+</html>
