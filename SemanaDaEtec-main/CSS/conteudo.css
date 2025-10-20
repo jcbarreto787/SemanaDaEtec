@@ -28,7 +28,7 @@ background-color: #eee;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  background-color: var(--color-blue);
+  background-color: var(--color--dark-blue);
   transition: 0.7s;
   
 }
